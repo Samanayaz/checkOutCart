@@ -74,7 +74,8 @@ body {
 }
 
 .content-section {
-  margin: 1em;
+  margin: 3em;
+  padding: 4em;
 }
 
 .container {
@@ -83,14 +84,17 @@ body {
   padding: 0 1em;
 }
 .section-header {
-  font-family: "Metal Mania";
+  font-family: "Comic Neue", cursive;
   font-weight: normal;
-  color: #333;
+  color: #4d36e4;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
 }
-
-.about-band-image {
+.new-img img {
+  width: 200px;
+  height: 300px;
+}
+.about-brand-image {
   float: left;
   height: 200px;
   width: 200px;
@@ -146,40 +150,40 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.btn-play {
-  display: block;
-  margin: 0 auto;
-  color: #2d9cdb;
-  font-size: 4em;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  padding: 0;
-  text-align: center;
-}
-
 .btn-primary {
   color: white;
-  background-color: #56ccf2;
+  background-color: #4da8a8;
   border: none;
   border-radius: 0.3em;
   font-weight: bold;
 }
 
 .btn-primary:hover {
-  background-color: #2d9cdb;
+  background-color: #416d81;
 }
 
-.tour-row {
+.dress-row {
   border-bottom: 1px solid black;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
-
-.tour-row:last-child {
-  border: none;
+.review-section {
+  background-color: #92c1d4;
+  padding: 1em;
 }
-
+.review-img img {
+  opacity: 0.8;
+  border-radius: 30%;
+  padding: 1em;
+}
+.new-img:hover {
+  background-color: rgb(180, 135, 158);
+  color: pink;
+}
+.review-head {
+  font-weight: 900;
+  font-size: x-large;
+}
 .tour-item {
   display: inline-block;
   padding-right: 0.5em;
@@ -199,8 +203,9 @@ body {
   width: 42%;
 }
 
-.tour-btn {
-  max-width: 19%;
+.dress-btn {
+  max-width: 29%;
+  align-items: center;
 }
 
 .shop-item {
@@ -218,7 +223,7 @@ body {
 }
 
 .shop-item-image {
-  height: 250px;
+  height: 350px;
 }
 
 .shop-item-details {
@@ -285,7 +290,7 @@ body {
 
 .btn-danger {
   color: white;
-  background-color: #eb5757;
+  background-color: #ce0f0f;
   border: none;
   border-radius: 0.3em;
   font-weight: bold;
@@ -338,4 +343,33 @@ body {
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.75em;
+}
+
+@media (min-width: 900px) {
+  .new-dress {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .new-img {
+    padding: 5em 3em 5em 3em;
+  }
+
+  .container {
+    padding: 4em;
+  }
+  .review-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .review-head {
+    padding-bottom: 14em;
+    text-align: center;
+  }
+  .shop-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
