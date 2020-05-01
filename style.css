@@ -351,7 +351,13 @@ body {
   margin: 40px auto 80px auto;
   font-size: 1.75em;
 }
-
+.basket i {
+  font-size: 1.5em;
+  color: white;
+}
+.basket {
+  float: right;
+}
 @media (min-width: 900px) {
   .new-dress {
     display: flex;
