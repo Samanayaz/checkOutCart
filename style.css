@@ -286,6 +286,7 @@ body {
   width: 75px;
   height: auto;
   border-radius: 10px;
+  padding: 1em;
 }
 
 .btn-danger {
@@ -338,6 +339,12 @@ body {
   color: #333;
   font-size: 1.1em;
 }
+.cart-item-title {
+  padding: 1em;
+}
+.cart-price {
+  padding: 2em;
+}
 
 .btn-purchase {
   display: block;
@@ -371,5 +378,11 @@ body {
   .shop-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .cart-item-title {
+    padding-right: 6em;
+  }
+  .cart-price {
+    padding-left: 6em;
   }
 }
